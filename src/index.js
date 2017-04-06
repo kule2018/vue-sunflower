@@ -8,17 +8,17 @@ import {Carousel, CarouselItem} from "./components/carousel";
 import {Collapse, CollapseItem} from "./components/collapse";
 
 const components = [
-    Alert,
-    Badge,
-    Breadcrumb,
-    BreadcrumbItem,
-    Button,
-    ButtonGroup,
-    Card,
-    Carousel,
-    CarouselItem,
-    Collapse,
-    CollapseItem
+  Alert,
+  Badge,
+  Breadcrumb,
+  BreadcrumbItem,
+  Button,
+  ButtonGroup,
+  Card,
+  Carousel,
+  CarouselItem,
+  Collapse,
+  CollapseItem
 ];
 
 const install = function(Vue, opts = {}) {

@@ -4,14 +4,16 @@ var UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, "../src/index.js"),
-    vendor: "vue"
+    sunflower: path.resolve(__dirname, "../src/index.js")
+  },
+  externals: {
+    vue: "Vue"
   },
   output: {
     path: path.resolve(__dirname, "../dist"),
     filename: "[name].js",
     libraryTarget: "umd",
-    library: "vue-sunflower"
+    library: "Sunflower"
   },
   resolve: {
     extensions: [".js", ".vue", ".json" ]
@@ -26,13 +28,14 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: "vue-loader"
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: "url-loader",
       }
     ]
   },
   plugins: [
-      new UglifyJSPlugin(),
-      new webpack.optimize.CommonsChunkPlugin({
-        name: "vendor"
-      })
+    new UglifyJSPlugin()
   ]
 };

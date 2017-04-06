@@ -1,20 +1,21 @@
 var path = require("path");
 var webpack = require("webpack");
-var UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, "../src/index.js"),
-    vendor: "vue"
+    sunflower: path.resolve(__dirname, "../src/index.js")
   },
   output: {
     path: path.resolve(__dirname, "../dist"),
     filename: "[name].js",
     libraryTarget: "umd",
-    library: "vue-sunflower"
+    library: "Sunflower"
   },
   resolve: {
     extensions: [".js", ".vue", ".json" ]
+  },
+  externals: {
+    vue: "Vue"
   },
   module: {
     rules: [
@@ -30,9 +31,5 @@ module.exports = {
     ]
   },
   plugins: [
-      new UglifyJSPlugin(),
-      new webpack.optimize.CommonsChunkPlugin({
-        name: "vendor"
-      })
   ]
 };
