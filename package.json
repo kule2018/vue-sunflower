@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:src": "webpack --config ./build/webpack.dev.config.js",
-    "build:src": "webpack --config ./build/webpack.prod.config.js",
-    "dev:demo": "webpack --config ./build/webpack.demo.config.js"
+    "dev:src": "webpack --config ./build/webpack.src.js",
+    "build:src": "webpack --config ./build/webpack.src.min.js",
+    "dev:demo": "webpack --config ./build/webpack.demo.js",
+    "build:demo": "webpack --config ./build/webpack.demo.min.js"
   },
   "keywords": [],
   "author": "xhlf",

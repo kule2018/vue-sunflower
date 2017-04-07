@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define(["Vue"], factory);
 	else if(typeof exports === 'object')
-		exports["Sunflower"] = factory(require("Vue"));
+		exports["sunflower"] = factory(require("Vue"));
 	else
-		root["Sunflower"] = factory(root["Vue"]);
+		root["sunflower"] = factory(root["Vue"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_4__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
