@@ -131,6 +131,7 @@
   npm run build:src
 ```
 执行此命令后即可生成打包文件 `dist/sunflower/sunflower.js`
+
 10. 示例页代码编写
 ```javascript
   /**
