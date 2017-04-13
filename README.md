@@ -167,15 +167,19 @@
   <template>
     <div class="container">
       <nav>
-        <ul>
-          <li><router-link to="/breadcrumb">Breadcrumb</router-link></li>
+        <ul class="menu-left">
+          <router-link to="/breadcrumb" tag="li">Breadcrumb</router-link>
         </ul>
       </nav>
-      <router-view></router-view>
+      <main class="main">
+        <router-view></router-view>
+      </main>
     </div>
   </template>
   <script>
+    export default {
   
+    }
   </script>
 ```
 ```vue
@@ -183,12 +187,28 @@
     * example/breadcrumb.vue
     */
   <template>
-    <s-breadcrumb separator="/">
-      <s-breadcrumb-item :to="{ path: '/breadcrumb' }">首页</s-breadcrumb-item>
-      <s-breadcrumb-item>首页</s-breadcrumb-item>
-      <s-breadcrumb-item>首页</s-breadcrumb-item>
-      <s-breadcrumb-item>首页</s-breadcrumb-item>
-    </s-breadcrumb>
+    <article class="article">
+      <h1>Breadcrumb 面包屑</h1>
+      <h3>基础用法</h3>
+      <div class="example">
+        <div class="example-demo">
+          <s-breadcrumb separator="/">
+            <s-breadcrumb-item :to="{ path: '/' }">首页</s-breadcrumb-item>
+            <s-breadcrumb-item :to="{ path: '/'}">组件</s-breadcrumb-item>
+            <s-breadcrumb-item :to="{ path: '/breadcrumb'}">面包屑</s-breadcrumb-item>
+          </s-breadcrumb>
+        </div>
+        <div class="example-code">
+          <pre><code>
+      &lt;s-breadcrumb separator="/"&gt;
+        &lt;s-breadcrumb-item :to="{ path: '/' }"&gt;首页&lt;/s-breadcrumb-item&gt;
+        &lt;s-breadcrumb-item :to="{ path: '/'}"&gt;组件&lt;/s-breadcrumb-item&gt;
+        &lt;s-breadcrumb-item :to="{ path: '/breadcrumb'}"&gt;面包屑&lt;/s-breadcrumb-item&gt;
+      &lt;/s-breadcrumb&gt;
+          </code></pre>
+        </div>
+      </div>
+    </article>
   </template>
   <script>
     export default {
@@ -316,13 +336,17 @@
       "build:hot": "webpack-dev-server --config ./build/webpack.demo.cfg.js --open --hot"
     }
   ```
-  > 现在执行 `npm run build:hot`，会发现浏览器自动打开了示例页。此时，我们修改示例页的代码，会发现浏览器自动刷新了（控制台也可以看到自动打包的日志）。如果需要修改组件源代码，那么需要在 `example/main.js` 的第三行，将 `sunflower` 的导入路径修改为 "../src/"，你可以尝试修改组件源码，浏览器会自动刷新。
+  > 现在执行 `npm run build:hot`，会发现浏览器自动打开了示例页。此时，我们修改示例页的代码（有的IDE需要按 `Ctrl + s`），会发现浏览器自动刷新了（控制台也可以看到自动打包的日志）。如果需要修改组件源代码，那么需要在 `example/main.js` 的第三行，将 `sunflower` 的导入路径修改为 "../src/"，你可以尝试修改组件源码，浏览器会自动刷新。
   >> 在这里我们需要清楚以下知识点：
   >> 1. `webpack-dev-server` 生成的包并没有放在你的真实目录中，而是放在了内存中；
   >> 1. `webpack.demo.cfg.js` 中 `devServer.contentBase` 为 `index.html` 的目录路径，也就是说告诉 `devServer` 打包完成后，服务器打开的页面路径；
   >> 1. `webpack.demo.cfg.js` 中 `output.publicPath` 为打包后js的虚拟路径，也就是 `index.html` 中 `script` 的 `src`。例如，修改 `publicPath` 值为 "/a/b"，那么 `src` 需要修改为 `a/b/demo.js`。
+  
+  > 接下来，我们就可以进行组件的开发，以及示例页的编写。在 `src` 中添加组件源码，在 `example` 中添加组件示例页代码，浏览器会自动刷新。
 # TODO
 - [x] webpack + vue 实现组件库 初级教程
+- [x] 示例页样式
+- [ ] highlight自定义指令的实现
 - [ ] 代码压缩
 - [ ] js代码分离
 - [ ] css代码提取到单独的文件

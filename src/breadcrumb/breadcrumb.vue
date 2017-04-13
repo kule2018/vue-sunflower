@@ -19,4 +19,9 @@
     font-size: 14px;
     line-height: 1;
   }
+  .s-breadcrumb:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
 </style>

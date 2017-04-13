@@ -45,4 +45,7 @@
     margin: 0 8px;
     color: #bfcbd9;
   }
+  .s-breadcrumb-item:last-child .s-breadcrumb-separator {
+    display: none;
+  }
 </style>
