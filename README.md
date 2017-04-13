@@ -355,6 +355,7 @@
 # TODO
 - [x] webpack + vue 实现组件库 初级教程
 - [x] 示例页样式
+- [x] es6转es5
 - [ ] highlight自定义指令的实现
 - [ ] 代码压缩
 - [ ] js代码分离
