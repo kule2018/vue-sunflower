@@ -343,6 +343,15 @@
   >> 1. `webpack.demo.cfg.js` 中 `output.publicPath` 为打包后js的虚拟路径，也就是 `index.html` 中 `script` 的 `src`。例如，修改 `publicPath` 值为 "/a/b"，那么 `src` 需要修改为 `a/b/demo.js`。
   
   > 接下来，我们就可以进行组件的开发，以及示例页的编写。在 `src` 中添加组件源码，在 `example` 中添加组件示例页代码，浏览器会自动刷新。
+  
+* ES6 与 ES5。
+  > 上面打包的代码里并未进行es6到es5的转换，因此在某些不支持es6的浏览器（例如IE9）中运行会报错，解决办法：在项目根目录下新建 `.babelrc`
+  ```JSON
+  {
+    "presets": ["env"]
+  }
+  ```
+  
 # TODO
 - [x] webpack + vue 实现组件库 初级教程
 - [x] 示例页样式

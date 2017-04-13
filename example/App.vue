@@ -64,7 +64,7 @@
   ul.menu-left li {
     padding: 14px 24px;
     cursor: pointer;
-    overflower: hidden;
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     border-right: 2px solid transparent;
