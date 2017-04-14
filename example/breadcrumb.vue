@@ -1,5 +1,5 @@
 <template>
-  <article class="article">
+  <article class="article" v-hljs>
     <h1>Breadcrumb 面包屑</h1>
     <h3>基础用法</h3>
     <div class="example">
@@ -10,7 +10,7 @@
           <s-breadcrumb-item :to="{ path: '/breadcrumb'}">面包屑</s-breadcrumb-item>
         </s-breadcrumb>
       </div>
-      <div class="example-code" v-hljs>
+      <div class="example-code">
         <pre><code>
     &lt;s-breadcrumb separator="/"&gt;
       &lt;s-breadcrumb-item :to="{ path: '/' }"&gt;首页&lt;/s-breadcrumb-item&gt;

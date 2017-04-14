@@ -382,12 +382,25 @@
     ```npm
     npm install --save highlightjs
     ```
+    
+1. 编写自定义指令，见 `example/hljs.js`
+    ```javascript
+    /**
+      * example/main.js 中添加代码
+      */
+    import Hljs from "./hljs"
+    
+    Vue.use(Hljs);
+    ```
+1. 添加高亮代码样式，见 `dist/util/code-theme.css`
+
+1. 使用 `v-hljs`，在示例页的 `article` 添加 `v-hljs`。
 
 # TODO
 - [x] webpack + vue 实现组件库 初级教程
 - [x] 示例页样式
 - [x] es6转es5
-- [ ] highlight自定义指令的实现
+- [x] highlight自定义指令的实现
 - [ ] 代码压缩
 - [ ] js代码分离
 - [ ] css代码提取到单独的文件

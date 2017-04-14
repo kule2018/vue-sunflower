@@ -1,0 +1,13 @@
+.hljs {
+  font-family: Consolas,Menlo,Courier,monospace;
+}
+.hljs-name {
+  color: #3e76f6;
+}
+.hljs-attr {
+  color: #e96900;
+}
+.hljs-string,
+.hljs-template-variable {
+  color: #42b983;
+}
