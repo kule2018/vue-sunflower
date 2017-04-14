@@ -26,19 +26,18 @@
   export default {
   }
 </script>
-<style>
+<style lang="scss">
   .article {
     position: relative;
-  }
-  .article:after {
-    content: "";
-    clear: both;
-    display: block;
-  }
-  .article h1,
-  .article h3 {
-    margin: 12px 0;
-    font-weight: 400;
+    &:after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+    h1, h3 {
+      margin: 12px 0;
+      font-weight: 400;
+    }
   }
   .example {
     border: 1px solid #eee;

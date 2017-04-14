@@ -343,7 +343,7 @@
   >> 1. `webpack.demo.cfg.js` 中 `output.publicPath` 为打包后js的虚拟路径，也就是 `index.html` 中 `script` 的 `src`。例如，修改 `publicPath` 值为 "/a/b"，那么 `src` 需要修改为 `a/b/demo.js`。
   
   > 接下来，我们就可以进行组件的开发，以及示例页的编写。在 `src` 中添加组件源码，在 `example` 中添加组件示例页代码，浏览器会自动刷新。
-  
+
 * ES6 与 ES5。
   > 上面打包的代码里并未进行es6到es5的转换，因此在某些不支持es6的浏览器（例如IE9）中运行会报错，解决办法：在项目根目录下新建 `.babelrc`
   ```JSON
@@ -352,6 +352,31 @@
   }
   ```
   
+## 各种 `css` 语法转换
+在 `.vue` 文件中的 `style` 中，需要用 lang 声名 css 语法类型，例如：
+```
+<style lang="scss">
+...
+</style>
+```
+* less
+  > 需要安装 `less` 和 `less-loader`，`npm install --save-dev less less-loader`
+ 
+  > `webpack` 配置文件中，`vue-loader` 的 `options.loaders` 添加 `"less": "vue-style-loader!css-loader!less-loader"`，此条配置也可省略。
+  
+* sass
+  > 需要安装 `node-sass` 和 `sass-loader`，`npm install --save-dev node-sass sass-loader`
+    
+  > `webpack` 配置文件中，`vue-loader` 的 `options.loaders` 添加 `"sass": "vue-style-loader!css-loader!sass-loader?indentedSyntax"`
+     
+* scss
+  > 也是用 `sass-loader`，不需要加 `indentedSyntax`。
+  
+* stylus
+  > 需要安装 `stylus` 和 `stylus-loader`，`npm install --save-dev stylus stylus-loader`
+        
+  > `webpack` 配置文件中，`vue-loader` 的 `options.loaders` 添加 `"stylus": "vue-style-loader!css-loader!stylus-loader"`，此条配置也可省略。
+
 # TODO
 - [x] webpack + vue 实现组件库 初级教程
 - [x] 示例页样式
