@@ -377,6 +377,12 @@
         
   > `webpack` 配置文件中，`vue-loader` 的 `options.loaders` 添加 `"stylus": "vue-style-loader!css-loader!stylus-loader"`，此条配置也可省略。
 
+## 高亮示例页代码（使用自定义指令）
+1. 安装highlightjs
+    ```npm
+    npm install --save highlightjs
+    ```
+
 # TODO
 - [x] webpack + vue 实现组件库 初级教程
 - [x] 示例页样式

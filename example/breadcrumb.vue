@@ -10,7 +10,7 @@
           <s-breadcrumb-item :to="{ path: '/breadcrumb'}">面包屑</s-breadcrumb-item>
         </s-breadcrumb>
       </div>
-      <div class="example-code">
+      <div class="example-code" v-hljs>
         <pre><code>
     &lt;s-breadcrumb separator="/"&gt;
       &lt;s-breadcrumb-item :to="{ path: '/' }"&gt;首页&lt;/s-breadcrumb-item&gt;
