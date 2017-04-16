@@ -377,6 +377,60 @@
         
   > `webpack` 配置文件中，`vue-loader` 的 `options.loaders` 添加 `"stylus": "vue-style-loader!css-loader!stylus-loader"`，此条配置也可省略。
 
+各种 `css` 文件：需要安装 `style-loader`，此 `loader` 和 `vue-style-loader` 一样，将 `css` 以 `style` 标签的方式插入到文档中（`head` 中）。
+
+* .css
+  > 修改 `webpack` 配置文件
+  ```
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        loader: ["style-loader", "css-loader"]
+      }
+    ]
+  }
+  ```
+  
+* .less
+  > 修改 `webpack` 配置文件
+  ```
+  module: {
+    rules: [
+      {
+        test: /\.less$/,
+        loader: ["style-loader", "css-loader", "less-loader"]
+      }
+    ]
+  }
+  ```
+  
+* .sass 和 .scss
+  > 修改 `webpack` 配置文件
+  ```
+  module: {
+    rules: [
+      {
+        test: /\.sass$/,
+        loader: ["style-loader", "css-loader", "sass-loader"]
+      }
+    ]
+  }
+  ```
+
+* .styl
+  > 修改 `webpack` 配置文件
+  ```
+  module: {
+    rules: [
+      {
+        test: /\.sass$/,
+        loader: ["style-loader", "css-loader", "stylus-loader"]
+      }
+    ]
+  }
+  ```
+
 ## 高亮示例页代码（使用自定义指令）
 1. 安装highlightjs
     ```npm
@@ -404,7 +458,7 @@
 - [ ] 代码压缩
 - [ ] js代码分离
 - [ ] css代码提取到单独的文件
-- [ ] 各种css语法转换
+- [x] 各种css语法转换
 - [ ] vue-jsx语法的打包
 
 ##### webpack 部分
