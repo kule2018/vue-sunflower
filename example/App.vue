@@ -2,9 +2,13 @@
   <div class="container">
     <nav>
       <ul class="menu-left">
+        <router-link to="/alert" tag="li">Alert</router-link>
         <router-link to="/ajax" tag="li">Ajax</router-link>
+        <router-link to="/badge" tag="li">Badge</router-link>
+        <router-link to="/box" tag="li">Box</router-link>
         <router-link to="/breadcrumb" tag="li">Breadcrumb</router-link>
         <router-link to="/button" tag="li">Button</router-link>
+        <router-link to="/card" tag="li">Card</router-link>
       </ul>
     </nav>
     <main class="main">

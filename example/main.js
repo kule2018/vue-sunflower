@@ -10,18 +10,13 @@ Vue.use(Hljs);
 
 const router = new VueRouter({
   routes: [
-    {
-      path: "/ajax",
-      component: require("./Ajax")
-    },
-    {
-      path: "/breadcrumb",
-      component: require("./Breadcrumb")
-    },
-    {
-      path: "/button",
-      component: require("./Button")
-    }
+    { path: "/ajax", component: require("./Ajax") },
+    { path: "/alert", component: require("./Alert") },
+    { path: "/badge", component: require("./Badge") },
+    { path: "/box", component: require("./Box") },
+    { path: "/breadcrumb", component: require("./Breadcrumb") },
+    { path: "/button", component: require("./Button") },
+    { path: "/card", component: require("./Card") }
   ]
 });
 
