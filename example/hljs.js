@@ -1,4 +1,6 @@
-import Hljs from "highlightjs/highlight.pack.min"
+import Hljs from "highlightjs/highlight.pack.min";
+import "./code-theme.css";
+
 let hljs = {};
 hljs.install = (Vue) => {
   Vue.directive('hljs', {

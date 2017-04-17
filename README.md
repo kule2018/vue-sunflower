@@ -446,7 +446,7 @@
     
     Vue.use(Hljs);
     ```
-1. 添加高亮代码样式，见 `dist/util/code-theme.css`
+1. 添加高亮代码样式，见 `example/code-theme.css`
 
 1. 使用 `v-hljs`，在示例页的 `article` 添加 `v-hljs`。
 
