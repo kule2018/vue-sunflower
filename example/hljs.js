@@ -5,11 +5,9 @@ let hljs = {};
 hljs.install = (Vue) => {
   Vue.directive('hljs', {
     bind: el => {
-      let blocks = el.querySelectorAll("pre code");
-      if (blocks.length > 0) {
-        for (let i in blocks) {
-          return Hljs.highlightBlock(blocks[i])
-        }
+      let block = el.querySelector("pre code");
+      if (block) {
+        return Hljs.highlightBlock(block)
       }
     }
   });

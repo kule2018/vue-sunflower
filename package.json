@@ -11,7 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.1",
     "highlightjs": "^9.10.0",
+    "lodash": "^4.17.4",
     "vue": "^2.2.6",
     "vue-router": "^2.4.0"
   },

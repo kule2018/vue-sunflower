@@ -460,6 +460,7 @@
 - [ ] css代码提取到单独的文件
 - [x] 各种css语法转换
 - [ ] vue-jsx语法的打包
+- [ ] 示例代码一键复制功能
 
 ##### webpack 部分
 - [x] webpack-dev-server

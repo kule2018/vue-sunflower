@@ -2,7 +2,9 @@
   <div class="container">
     <nav>
       <ul class="menu-left">
+        <router-link to="/ajax" tag="li">Ajax</router-link>
         <router-link to="/breadcrumb" tag="li">Breadcrumb</router-link>
+        <router-link to="/button" tag="li">Button</router-link>
       </ul>
     </nav>
     <main class="main">
