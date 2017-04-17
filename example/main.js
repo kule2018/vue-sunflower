@@ -16,7 +16,10 @@ const router = new VueRouter({
     { path: "/box", component: require("./Box") },
     { path: "/breadcrumb", component: require("./Breadcrumb") },
     { path: "/button", component: require("./Button") },
-    { path: "/card", component: require("./Card") }
+    { path: "/card", component: require("./Card") },
+    { path: "/carousel", component: require("./Carousel") },
+    { path: "/cascader", component: require("./Cascader") },
+    { path: "/input", component: require("./Input") }
   ]
 });
 

@@ -9,6 +9,9 @@
         <router-link to="/breadcrumb" tag="li">Breadcrumb</router-link>
         <router-link to="/button" tag="li">Button</router-link>
         <router-link to="/card" tag="li">Card</router-link>
+        <router-link to="/carousel" tag="li">Carousel</router-link>
+        <router-link to="/cascader" tag="li">Cascader</router-link>
+        <router-link to="/input" tag="li">Input</router-link>
       </ul>
     </nav>
     <main class="main">

@@ -5,6 +5,9 @@ import Box from "./box";
 import {Breadcrumb, BreadcrumbItem} from "./breadcrumb";
 import {Button, ButtonGroup} from "./button";
 import Card from "./card";
+import {Carousel, CarouselItem} from "./carousel";
+import Cascader from "./cascader";
+import Input from "./input";
 
 const components = [
     Alert,
@@ -14,7 +17,11 @@ const components = [
     BreadcrumbItem,
     Button,
     ButtonGroup,
-    Card
+    Card,
+    Carousel,
+    CarouselItem,
+    Cascader,
+    Input
 ];
 
 const install = function(Vue, opts = {}) {
@@ -37,5 +44,9 @@ export default {
   BreadcrumbItem,
   Button,
   ButtonGroup,
-  Card
+  Card,
+  Carousel,
+  CarouselItem,
+  Cascader,
+  Input
 }
