@@ -13,6 +13,7 @@ import {DatePicker, TimePicker, TimeSelect} from "./date-picker";
 import Dialog from "./dialog";
 import Input from "./input";
 import Scrollbar from "./scrollbar";
+import Switch from "./switch";
 
 const components = [
     Alert,
@@ -34,6 +35,7 @@ const components = [
     Dialog,
     Input,
     Scrollbar,
+    Switch,
     TimePicker,
     TimeSelect
 ];
@@ -42,6 +44,7 @@ const install = function(Vue, opts = {}) {
   components.map(component => {
     Vue.component(component.name, component);
   });
+  Vue.prototype.$audio = Audio
 };
 
 if (typeof window !== "undefined" && window.Vue) {
@@ -70,6 +73,7 @@ export default {
   Dialog,
   Input,
   Scrollbar,
+  Switch,
   TimePicker,
   TimeSelect
 }
