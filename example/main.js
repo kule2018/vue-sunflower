@@ -22,6 +22,7 @@ const router = new VueRouter({
     { path: "/checkbox", component: require("./Checkbox") },
     { path: "/collapse", component: require("./Collapse") },
     { path: "/date-picker", component: require("./Date-picker") },
+    { path: "/dialog", component: require("./Dialog") },
     { path: "/input", component: require("./Input") },
     { path: "/scrollbar", component: require("./Scrollbar") },
     { path: "/time-picker", component: require("./Time-picker") },

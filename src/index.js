@@ -10,6 +10,7 @@ import Cascader from "./cascader";
 import {Checkbox, CheckboxGroup} from "./checkbox";
 import {Collapse, CollapseItem} from "./collapse";
 import {DatePicker, TimePicker, TimeSelect} from "./date-picker";
+import Dialog from "./dialog";
 import Input from "./input";
 import Scrollbar from "./scrollbar";
 
@@ -30,6 +31,7 @@ const components = [
     Collapse,
     CollapseItem,
     DatePicker,
+    Dialog,
     Input,
     Scrollbar,
     TimePicker,
@@ -65,6 +67,7 @@ export default {
   Collapse,
   CollapseItem,
   DatePicker,
+  Dialog,
   Input,
   Scrollbar,
   TimePicker,
