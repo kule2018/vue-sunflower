@@ -9,7 +9,9 @@ import {Carousel, CarouselItem} from "./carousel";
 import Cascader from "./cascader";
 import {Checkbox, CheckboxGroup} from "./checkbox";
 import {Collapse, CollapseItem} from "./collapse";
+import {DatePicker, TimePicker, TimeSelect} from "./date-picker";
 import Input from "./input";
+import Scrollbar from "./scrollbar";
 
 const components = [
     Alert,
@@ -27,7 +29,11 @@ const components = [
     CheckboxGroup,
     Collapse,
     CollapseItem,
-    Input
+    DatePicker,
+    Input,
+    Scrollbar,
+    TimePicker,
+    TimeSelect
 ];
 
 const install = function(Vue, opts = {}) {
@@ -58,5 +64,9 @@ export default {
   CheckboxGroup,
   Collapse,
   CollapseItem,
-  Input
+  DatePicker,
+  Input,
+  Scrollbar,
+  TimePicker,
+  TimeSelect
 }

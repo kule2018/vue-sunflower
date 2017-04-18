@@ -21,7 +21,11 @@ const router = new VueRouter({
     { path: "/cascader", component: require("./Cascader") },
     { path: "/checkbox", component: require("./Checkbox") },
     { path: "/collapse", component: require("./Collapse") },
-    { path: "/input", component: require("./Input") }
+    { path: "/date-picker", component: require("./Date-picker") },
+    { path: "/input", component: require("./Input") },
+    { path: "/scrollbar", component: require("./Scrollbar") },
+    { path: "/time-picker", component: require("./Time-picker") },
+    { path: "/time-select", component: require("./Time-select") }
   ]
 });
 

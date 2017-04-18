@@ -13,7 +13,11 @@
         <router-link to="/cascader" tag="li">Cascader</router-link>
         <router-link to="/checkbox" tag="li">Checkbox</router-link>
         <router-link to="/collapse" tag="li">Collapse</router-link>
+        <router-link to="/date-picker" tag="li">DatePicker</router-link>
         <router-link to="/input" tag="li">Input</router-link>
+        <router-link to="/scrollbar" tag="li">Scrollbar</router-link>
+        <router-link to="/time-picker" tag="li">TimePicker</router-link>
+        <router-link to="/time-select" tag="li">TimeSelect</router-link>
       </ul>
     </nav>
     <main class="main">
