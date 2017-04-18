@@ -7,6 +7,7 @@ import {Button, ButtonGroup} from "./button";
 import Card from "./card";
 import {Carousel, CarouselItem} from "./carousel";
 import Cascader from "./cascader";
+import {Checkbox, CheckboxGroup} from "./checkbox";
 import Input from "./input";
 
 const components = [
@@ -21,6 +22,8 @@ const components = [
     Carousel,
     CarouselItem,
     Cascader,
+    Checkbox,
+    CheckboxGroup,
     Input
 ];
 
@@ -48,5 +51,7 @@ export default {
   Carousel,
   CarouselItem,
   Cascader,
+  Checkbox,
+  CheckboxGroup,
   Input
 }

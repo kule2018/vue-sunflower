@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.1",
+    "echarts": "^3.5.3",
     "highlightjs": "^9.10.0",
     "lodash": "^4.17.4",
     "throttle-debounce": "^1.0.1",

@@ -12,6 +12,7 @@
         <router-link to="/carousel" tag="li">Carousel</router-link>
         <router-link to="/cascader" tag="li">Cascader</router-link>
         <router-link to="/input" tag="li">Input</router-link>
+        <router-link to="/checkbox" tag="li">Checkbox</router-link>
       </ul>
     </nav>
     <main class="main">
