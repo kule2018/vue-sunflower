@@ -352,6 +352,18 @@
   }
   ```
   
+* vue-jsx
+  ```
+  /**
+    * .babelrc 中增加代码
+    */
+  {
+    "presets": ["env"],
+    "plugins": ["transform-vue-jsx"]
+  }
+  
+  ```
+  
 ## 各种 `css` 语法转换
 在 `.vue` 文件中的 `style` 中，需要用 lang 声名 css 语法类型，例如：
 ```
@@ -459,7 +471,7 @@
 - [ ] js代码分离
 - [ ] css代码提取到单独的文件
 - [x] 各种css语法转换
-- [ ] vue-jsx语法的打包
+- [x] vue-jsx语法的打包
 - [ ] 示例代码一键复制功能
 
 ##### webpack 部分
@@ -468,3 +480,4 @@
 - [ ] ExtractTextWebpackPlugin
 - [ ] HtmlWebpackPlugin
 - [ ] UglifyjsWebpackPlugin
+- [ ] CopyWebpackPlugin
