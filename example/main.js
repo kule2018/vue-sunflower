@@ -20,6 +20,7 @@ const router = new VueRouter({
     { path: "/carousel", component: require("./Carousel") },
     { path: "/cascader", component: require("./Cascader") },
     { path: "/checkbox", component: require("./Checkbox") },
+    { path: "/collapse", component: require("./Collapse") },
     { path: "/input", component: require("./Input") }
   ]
 });

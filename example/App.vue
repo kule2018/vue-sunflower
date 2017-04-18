@@ -11,8 +11,9 @@
         <router-link to="/card" tag="li">Card</router-link>
         <router-link to="/carousel" tag="li">Carousel</router-link>
         <router-link to="/cascader" tag="li">Cascader</router-link>
-        <router-link to="/input" tag="li">Input</router-link>
         <router-link to="/checkbox" tag="li">Checkbox</router-link>
+        <router-link to="/collapse" tag="li">Collapse</router-link>
+        <router-link to="/input" tag="li">Input</router-link>
       </ul>
     </nav>
     <main class="main">
