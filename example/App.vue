@@ -17,6 +17,7 @@
         <router-link to="/dialog" tag="li">Dialog</router-link>
         <router-link to="/dropdown" tag="li">Dropdown</router-link>
         <router-link to="/form" tag="li">Form</router-link>
+        <router-link to="/grid" tag="li">Grid</router-link>
         <router-link to="/input" tag="li">Input</router-link>
         <router-link to="/scrollbar" tag="li">Scrollbar</router-link>
         <router-link to="./switch" tag="li">Switch</router-link>

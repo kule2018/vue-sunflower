@@ -25,6 +25,7 @@ const router = new VueRouter({
     { path: "/dialog", component: require("./Dialog") },
     { path: "/dropdown", component: require("./Dropdown") },
     { path: "/form", component: require("./Form") },
+    { path: "/grid", component: require("./Grid") },
     { path: "/input", component: require("./Input") },
     { path: "/scrollbar", component: require("./Scrollbar") },
     { path: "/switch", component: require("./Switch") },

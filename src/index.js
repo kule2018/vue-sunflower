@@ -8,6 +8,7 @@ import Card from "./card";
 import {Carousel, CarouselItem} from "./carousel";
 import Cascader from "./cascader";
 import {Checkbox, CheckboxGroup} from "./checkbox";
+import {Col, Row} from "./grid";
 import {Collapse, CollapseItem} from "./collapse";
 import {DatePicker, TimePicker, TimeSelect} from "./date-picker";
 import Dialog from "./dialog";
@@ -31,6 +32,7 @@ const components = [
     Cascader,
     Checkbox,
     CheckboxGroup,
+    Col,
     Collapse,
     CollapseItem,
     DatePicker,
@@ -42,6 +44,7 @@ const components = [
     FormItem,
     Input,
     MenuDropdown,
+    Row,
     Scrollbar,
     Switch,
     TimePicker,
@@ -75,6 +78,7 @@ export default {
   Cascader,
   Checkbox,
   CheckboxGroup,
+  Col,
   Collapse,
   CollapseItem,
   DatePicker,
@@ -86,6 +90,7 @@ export default {
   FormItem,
   Input,
   MenuDropdown,
+  Row,
   Scrollbar,
   Switch,
   TimePicker,
