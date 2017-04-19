@@ -12,6 +12,7 @@ import {Collapse, CollapseItem} from "./collapse";
 import {DatePicker, TimePicker, TimeSelect} from "./date-picker";
 import Dialog from "./dialog";
 import {Dropdown, DropdownItem, DropdownMenu, MenuDropdown} from "./dropdown";
+import {Form, FormItem} from "./form";
 import Input from "./input";
 import Scrollbar from "./scrollbar";
 import Switch from "./switch";
@@ -37,6 +38,8 @@ const components = [
     Dropdown,
     DropdownItem,
     DropdownMenu,
+    Form,
+    FormItem,
     Input,
     MenuDropdown,
     Scrollbar,
@@ -79,6 +82,8 @@ export default {
   Dropdown,
   DropdownItem,
   DropdownMenu,
+  Form,
+  FormItem,
   Input,
   MenuDropdown,
   Scrollbar,
