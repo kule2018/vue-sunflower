@@ -15,6 +15,7 @@
         <router-link to="/collapse" tag="li">Collapse</router-link>
         <router-link to="/date-picker" tag="li">DatePicker</router-link>
         <router-link to="/dialog" tag="li">Dialog</router-link>
+        <router-link to="/dropdown" tag="li">Dropdown</router-link>
         <router-link to="/input" tag="li">Input</router-link>
         <router-link to="/scrollbar" tag="li">Scrollbar</router-link>
         <router-link to="./switch" tag="li">Switch</router-link>

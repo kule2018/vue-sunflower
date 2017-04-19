@@ -11,6 +11,7 @@ import {Checkbox, CheckboxGroup} from "./checkbox";
 import {Collapse, CollapseItem} from "./collapse";
 import {DatePicker, TimePicker, TimeSelect} from "./date-picker";
 import Dialog from "./dialog";
+import {Dropdown, DropdownItem, DropdownMenu, MenuDropdown} from "./dropdown";
 import Input from "./input";
 import Scrollbar from "./scrollbar";
 import Switch from "./switch";
@@ -33,7 +34,11 @@ const components = [
     CollapseItem,
     DatePicker,
     Dialog,
+    Dropdown,
+    DropdownItem,
+    DropdownMenu,
     Input,
+    MenuDropdown,
     Scrollbar,
     Switch,
     TimePicker,
@@ -71,7 +76,11 @@ export default {
   CollapseItem,
   DatePicker,
   Dialog,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
   Input,
+  MenuDropdown,
   Scrollbar,
   Switch,
   TimePicker,
