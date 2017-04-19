@@ -15,6 +15,7 @@ import Dialog from "./dialog";
 import {Dropdown, DropdownItem, DropdownMenu, MenuDropdown} from "./dropdown";
 import {Form, FormItem} from "./form";
 import Input from "./input";
+import InputNumber from "./input-number";
 import Scrollbar from "./scrollbar";
 import Switch from "./switch";
 
@@ -43,6 +44,7 @@ const components = [
     Form,
     FormItem,
     Input,
+    InputNumber,
     MenuDropdown,
     Row,
     Scrollbar,
@@ -89,6 +91,7 @@ export default {
   Form,
   FormItem,
   Input,
+  InputNumber,
   MenuDropdown,
   Row,
   Scrollbar,

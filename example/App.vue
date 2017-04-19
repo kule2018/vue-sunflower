@@ -19,6 +19,7 @@
         <router-link to="/form" tag="li">Form</router-link>
         <router-link to="/grid" tag="li">Grid</router-link>
         <router-link to="/input" tag="li">Input</router-link>
+        <router-link to="/input-number" tag="li">InputNumber</router-link>
         <router-link to="/scrollbar" tag="li">Scrollbar</router-link>
         <router-link to="./switch" tag="li">Switch</router-link>
         <router-link to="/time-picker" tag="li">TimePicker</router-link>

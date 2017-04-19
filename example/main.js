@@ -27,6 +27,7 @@ const router = new VueRouter({
     { path: "/form", component: require("./Form") },
     { path: "/grid", component: require("./Grid") },
     { path: "/input", component: require("./Input") },
+    { path: "/input-number", component: require("./Input-number") },
     { path: "/scrollbar", component: require("./Scrollbar") },
     { path: "/switch", component: require("./Switch") },
     { path: "/time-picker", component: require("./Time-picker") },
